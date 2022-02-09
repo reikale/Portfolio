@@ -56,11 +56,11 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/tymespace/TymeSpace-home.PNG" alt="" style="max-width: 700px;">
+                  <img src="assets/img/portfolio/tymespace/admin-satellites.PNG" alt="" style="max-width: 700px;">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/tymespace/TymeSpace-home.PNG" alt="" style="max-width: 700px;">
+                  <img src="assets/img/portfolio/tymespace/DB_Model.PNG" alt="" style="max-width: 700px;">
                 </div>
 
               </div>
@@ -79,8 +79,34 @@
             </ul>
 
             <p>
-              This is ASP.NET MVC web application about satellites.
+              This is ASP.NET MVC web application about satellites with implemented CRUD operations.
             </p>
+            <h3>Technologies Used</h3>
+            <ul>
+              <li>Microsoft ASP.NET Core <em>- version 6.0.1</em></li>
+              <li> Microsoft ASP.NET Core Identity <em>- version 2.2.0 </em></li>
+              <li> Microsoft Entity Framework <em>- version 6.0.1 </em></li>
+              <li>Microsoft Entity Framework SQL Server  <em>- version 6.0.1 </em></li>
+              <li> MySql<em>- version 8.0.28 </em></li>
+              <li> MySQL Connector <em>- version 2.1.5</em></li>
+              <li> Entity Framework Pomelo <em>- version 6.0.1</em></li>
+              <li> Microsoft ASP.NET Core MVC <em>- version 2.2.5</em></li>
+              <li> AutoMapper <em>- version 11.0.1</em></li>
+              <li>jQuery DataTables <em>- version 1.11.4</em></li>
+              <li>Razor pages</li>
+            </ul>
+            <h3>Features</h3>
+            <ul>
+              <li>Authentication -- website is protected from unauthenticated users' unwanted actions with AntiForgery Cookies.</li>
+              <li>Authorization -- this app provides 4 different user roles: Administrator, Satellite Owner, Service Provider, and Customer. Each of them has a different accessibility level.
+                <li>Customer Role enables a user to view both lists of Service Providers and Satellites. Also, they have access to book a service or rent a Satellite.</li>
+                <li>Service Provider role gives the user the same accessibility as Customer Role with the addition of new service creation. New Service is immediately added to the service list and is visible to Customers.</li>
+                <li>Satellite Owner role gives the user the same accessibility as Customer Role with the addition of new Satellite creation. New Satellite is immediately added to Satellites list and is visible to Customers for booking.</li>
+                <li>Administrator role gives full access to the user. The administrator can create, edit and delete both Services and Satellites.</li>
+              </li>
+              <li>WEB API -- provided API gives access to users to GET, POST, EDIT and DELETE both Services and Satellites. At this stage Data Transfer Objects (DTOs) were used to ensure that only specific data would be available for users to get.</li>
+              <li>Database -- with integrated external database all new users are registered and saved externally. That gives the application ability to remember and authenticate registered users.</li>
+            </ul>
           </div>
 
         </div>
